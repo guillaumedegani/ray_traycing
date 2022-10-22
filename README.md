@@ -20,23 +20,23 @@ Before we start coding it's important to have an idea of how the algorithme that
 The first image obtained is quite simple, the image is 2D and represents only the intersection of the rays with the shapes without taking into consideration wether they intersect with the light source or not. 
 
 
-![2D representation](simple_intersection_2D_image.png)
+![2D representation](/assets/simple_intersection_2D_image.png)
 
 
 After doing that we added the intersection with the light source and part of the Phong Reflection model. This gave the following results :
 
-![2D representation](first_try_limits_at_edges.png)
+![2D representation](/assets/first_try_limits_at_edges.png)
 
 We can observe some artefacts that are caused by approximations in the inequalities used to compute the intersections.
 
 
 Here we add the cubic shape which is composed of 6 planes.  This shape is fairly complexe to implement if you want to be able to rotate it in all directions. Furthermore we fixed the issues with artefacts by reworking our inequalities for the intersections between the ray and the shapes and added the texture part of phong model.
 
-![2D representation](lighting_fixe_no_reflectio.png) 
+![2D representation](/assets/lighting_fixe_no_reflectio.png) 
 
 And finally we add the reflection. To do so we use a recursive function with a limit in the depth otherwise it would go on forvever. This is the final results that corespond to the specification of the project.
 
-![2D representation](reflection_added.png)
+![2D representation](/assets/reflection_added.png)
 
 
 
